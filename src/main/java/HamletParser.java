@@ -54,7 +54,7 @@ public Integer countHamlet(String hamletText){
 }
 public Integer countHoratio(String horatioText){
     pattern = Pattern.compile("(?i)Horatio");
-    matcher = pattern.matcher(horatioText);
+    matcher = pattern.matcher(horatioText);// Pattern to be matched
     Integer count=0;
     while(matcher.find()){
         count++;
@@ -63,7 +63,7 @@ public Integer countHoratio(String horatioText){
 }
 
 public String changeHamlet(String newName){
-        String result= hamletData.replaceAll("(?i)Hamlet", newName);
+        String result= hamletData.replaceAll("(?i)Hamlet", newName);// Replacement pattern 
         return result;
                 
     }
